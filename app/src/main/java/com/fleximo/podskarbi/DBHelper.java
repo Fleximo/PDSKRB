@@ -16,13 +16,17 @@ public class DBHelper extends SQLiteOpenHelper {
     //-----------------   SEPARATION SYMBOLS AND TYPES   -----------------//
     private static final String TEXT_TYPE = " TEXT";
     private static final String INT_TYPE = " INTEGER";
+    private static final String REAL_TYPE = " REAL";
     private static final String COMMA_SEP = ",";
 
     //----------------- CREATE CATEGORIES DATABASE TABLE -----------------//
     private static final String SQL_CREATE_CATEGORIES =
-            "CREATE TABLE " + DatabaseContract.CategoriesTable.TABLE_NAME +
+            "CREATE TABLE IF NOT EXISTS " + DatabaseContract.CategoriesTable.TABLE_NAME +
             " (" +
             DatabaseContract.CategoriesTable._ID + "INTEGER PRIMARY KEY," +
+            DatabaseContract.CategoriesTable.COLUMN_NAME_PURCHASE_PLACE  + TEXT_TYPE + COMMA_SEP +
+            DatabaseContract.CategoriesTable.COLUMN_NAME_PRICE  + REAL_TYPE + COMMA_SEP +
+            DatabaseContract.CategoriesTable.COLUMN_NAME_CURRENCY  + INT_TYPE + COMMA_SEP +
             DatabaseContract.CategoriesTable.COLUMN_NAME_CATEGORY  + TEXT_TYPE + COMMA_SEP +
             DatabaseContract.CategoriesTable.COLUMN_NAME_PRIORITY + INT_TYPE +
             " )";
