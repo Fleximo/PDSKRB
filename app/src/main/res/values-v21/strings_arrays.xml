@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="categories">
+        <item>@string/str_SpendActivity_Fare</item>
+        <item>@string/str_SpendActivity_Food</item>
+    </string-array>
+</resources>

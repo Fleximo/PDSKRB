@@ -1,0 +1,13 @@
+<resources>
+    <!--1. APP COMMON -->
+    <string name="app_name">Podskarbi</string>
+    <string name="action_settings">Settings</string>
+    <!--2. SPEND ACTIVITY -->
+    <!--2.1. buttons -->
+    <string name="str_SpendActivity_OK">OK</string>
+    <string name="str_SpendActivity_Cancel">Cancel</string>
+    <string name="str_SpendActivity_AddSpendCategory">Add Spend Category</string>
+    <!--2.2 categories -->
+    <string name="str_SpendActivity_Fare">Fare</string>
+    <string name="str_SpendActivity_Food">Food</string>
+</resources>
