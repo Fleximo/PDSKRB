@@ -17,10 +17,6 @@ public class SMSReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) { //KITKAT
-//            messages = Telephony.Sms.Intents.getMessagesFromIntent(intent);
-//            Toast.makeText(context, messages[0].getOriginatingAddress(), Toast.LENGTH_SHORT).show();
-//        }
         SmsMessage[] messages = null;
         Bundle myBundle = intent.getExtras();
         String strMessage = "";
